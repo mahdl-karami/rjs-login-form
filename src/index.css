@@ -17,8 +17,16 @@
 }
 
 body {
-  width: clamp(1px, 80%, 1200px);
+  max-width: 1200px;
+  margin: auto;
   height: 100vh;
   overflow: hidden;
   background: url(./assets/img/bg.jpg) center/cover;
+}
+
+.form-left-images{
+  img{
+    width: 100px;
+    height: 100px;
+  }
 }
