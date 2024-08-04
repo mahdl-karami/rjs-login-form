@@ -24,14 +24,7 @@ body {
   background: url(./assets/img/bg.jpg) center/cover;
 }
 
-.form-left-images {
-  img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-/** Start Form */
+/** start form  */
 .form-box {
   width: 800px;
   position: absolute;
@@ -48,4 +41,42 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.508);
 }
-/** End Form */
+/** end form  */
+
+/** start form-left */
+.form-left {
+  width: 55%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #ffffff4d;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px 50px 90px 10px;
+}
+.form-left-text {
+  width: 60%;
+  font-size: 0.9em;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.form-left-images {
+  img {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+  }
+}
+/** end form-left */
+
+/** start form-inputs */
+.form-inputs {
+  width: 45%;
+}
+/** end form-inputs */

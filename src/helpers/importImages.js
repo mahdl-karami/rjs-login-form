@@ -6,4 +6,4 @@ import spring from "../assets/img/spring.png";
 import stars from "../assets/img/stars.png";
 import outline from "../assets/img/white-outline.png";
 
-export const images = [cloud, coin, dots, rocket, spring, stars, outline];
+export const images = [outline, coin, rocket, stars, cloud, dots, spring];
