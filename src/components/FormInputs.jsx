@@ -5,11 +5,9 @@ import SignUp from "./SignUp";
 //? import helpers
 import submited from "../helpers/submitHandler";
 
-function FormInputs() {
-  const [formType, setFormType] = useState("signIn");
+function FormInputs({ formType, setFormType }) {
   return (
     <form className="form-inputs" onSubmit={(ev) => submited(ev)}>
-      
       <button onClick={() => setFormType("signIn")}>Sign In</button>
       <button onClick={() => setFormType("SignUp")}>Sign Up</button>
 
