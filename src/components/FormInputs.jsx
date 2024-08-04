@@ -4,6 +4,8 @@ import SingIn from "./SingIn";
 import SignUp from "./SignUp";
 //? import helpers
 import submited from "../helpers/submitHandler";
+//? import icons
+import { FaGoogle, FaFacebookF, FaTwitter, FaGithub } from "react-icons/fa";
 
 function FormInputs({ formType, setFormType }) {
   const [inputs, setInputs] = useState({
@@ -33,10 +35,18 @@ function FormInputs({ formType, setFormType }) {
       </div>
       {formType == "signIn" ? <SingIn inputs={inputs} /> : <SignUp inputs={inputs} />}
       <div className="social-media-icons">
-        <span>x</span>
-        <span>x</span>
-        <span>x</span>
-        <span>x</span>
+        <span>
+          <FaGoogle />
+        </span>
+        <span>
+          <FaFacebookF />
+        </span>
+        <span>
+          <FaTwitter />
+        </span>
+        <span>
+          <FaGithub />
+        </span>
       </div>
     </form>
   );

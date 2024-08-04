@@ -1,3 +1,5 @@
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 function SignUp({ inputs: { username, password, email } }) {
   return (
     <>
@@ -5,7 +7,7 @@ function SignUp({ inputs: { username, password, email } }) {
       <input placeholder="Email" name="email" type="email" value={email} />
       <input placeholder="User Name" name="username" type="text" value={username} />
       <input placeholder="Password" name="password" type="password" value={password} />
-      <button className="submit-btn">Sing Up {`->`}</button>
+      <button className="submit-btn">Sing Up {<FaLongArrowAltRight />}</button>
     </>
   );
 }

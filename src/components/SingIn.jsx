@@ -1,3 +1,5 @@
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 function SingIn({ inputs: { username, password } }) {
   return (
     <>
@@ -5,7 +7,7 @@ function SingIn({ inputs: { username, password } }) {
       <input name="username" placeholder="User Name" type="text" value={username} />
       <input name="password" placeholder="Password" type="password" value={password} />
       <a href="#">Need help ?</a>
-      <button className="submit-btn">Sing In {`->`}</button>
+      <button className="submit-btn">Sing In {<FaLongArrowAltRight />}</button>
     </>
   );
 }
