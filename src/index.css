@@ -30,3 +30,22 @@ body {
     height: 100px;
   }
 }
+
+/** Start Form */
+.form-box {
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3f7fe159;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.508);
+}
+/** End Form */
