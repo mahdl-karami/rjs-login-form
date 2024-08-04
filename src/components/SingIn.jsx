@@ -2,10 +2,10 @@ function SingIn({ inputs: { username, password } }) {
   return (
     <>
       <h1>Sign In</h1>
-      <input name="username" type="text" value={username} />
-      <input name="password" type="password" value={password} />
+      <input name="username" placeholder="User Name" type="text" value={username} />
+      <input name="password" placeholder="Password" type="password" value={password} />
       <a href="#">Need help ?</a>
-      <button>Sing In {`->`}</button>
+      <button className="submit-btn">Sing In {`->`}</button>
     </>
   );
 }

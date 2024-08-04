@@ -27,14 +27,16 @@ function FormInputs({ formType, setFormType }) {
   }, [formType]);
   return (
     <form className="form-inputs" onSubmit={(ev) => submited(ev)} onChange={(ev) => formHandleChange(ev)}>
-      <button onClick={() => setFormType("signIn")}>Sign In</button>
-      <button onClick={() => setFormType("SignUp")}>Sign Up</button>
+      <div className="form-type-btn">
+        <button onClick={() => setFormType("signIn")}>Sign In</button>
+        <button onClick={() => setFormType("SignUp")}>Sign Up</button>
+      </div>
       {formType == "signIn" ? <SingIn inputs={inputs} /> : <SignUp inputs={inputs} />}
       <div className="social-media-icons">
-        <button>x</button>
-        <button>x</button>
-        <button>x</button>
-        <button>x</button>
+        <span>x</span>
+        <span>x</span>
+        <span>x</span>
+        <span>x</span>
       </div>
     </form>
   );
