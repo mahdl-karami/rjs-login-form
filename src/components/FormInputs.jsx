@@ -11,13 +11,13 @@ function FormInputs({ formType, setFormType }) {
     username: "",
     password: "",
   });
-
   function formHandleChange(ev) {
     const {
       target: { name, value },
     } = ev;
     setInputs((prevS) => ({ ...prevS, [name]: value }));
   }
+  //! clear inputs
   useEffect(() => {
     setInputs({
       email: "",
@@ -29,9 +29,7 @@ function FormInputs({ formType, setFormType }) {
     <form className="form-inputs" onSubmit={(ev) => submited(ev)} onChange={(ev) => formHandleChange(ev)}>
       <button onClick={() => setFormType("signIn")}>Sign In</button>
       <button onClick={() => setFormType("SignUp")}>Sign Up</button>
-
       {formType == "signIn" ? <SingIn inputs={inputs} /> : <SignUp inputs={inputs} />}
-
       <div className="social-media-icons">
         <button>x</button>
         <button>x</button>

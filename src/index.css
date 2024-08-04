@@ -24,8 +24,8 @@ body {
   background: url(./assets/img/bg.jpg) center/cover;
 }
 
-.form-left-images{
-  img{
+.form-left-images {
+  img {
     width: 100px;
     height: 100px;
   }
