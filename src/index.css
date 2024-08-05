@@ -78,7 +78,7 @@ body {
 /** end form-left */
 
 /** start form-inputs */
-.form-inputs {
+.form-inputs , .loggedin {
   position: relative;
   width: 45%;
   display: flex;
