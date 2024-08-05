@@ -19,7 +19,7 @@
   .form-left {
     display: none;
   }
-  .form-inputs {
+  .form-inputs , .loggedin {
     width: 100%;
     h1 {
       margin: 3rem auto 0;
