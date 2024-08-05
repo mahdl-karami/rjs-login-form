@@ -20,8 +20,8 @@
 body {
   max-width: 1200px;
   margin: auto;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   background: url(./assets/img/bg.jpg) center/cover;
 }
 
