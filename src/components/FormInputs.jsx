@@ -7,8 +7,7 @@ import submited from "../helpers/submitHandler";
 //? import icons
 import { FaGoogle, FaFacebookF, FaTwitter, FaGithub } from "react-icons/fa";
 
-function FormInputs({ formType, setFormType, setLoggin , inputs , setInputs }) {
-
+function FormInputs({ formType, setFormType, setLoggin, inputs, setInputs }) {
   function formHandleChange(ev) {
     const {
       target: { name, value },
@@ -24,13 +23,13 @@ function FormInputs({ formType, setFormType, setLoggin , inputs , setInputs }) {
     });
   }, [formType]);
   return (
-    <form className="form-inputs" onSubmit={(ev) => submited(ev , setLoggin)} onChange={(ev) => formHandleChange(ev)}>
+    <form className="form-inputs" onSubmit={(ev) => submited(ev, setLoggin)} onChange={(ev) => formHandleChange(ev)}>
       <div className="form-type-btn">
         <button type="button" onClick={() => setFormType("signIn")} className={formType == "signIn" ? "active" : ""}>
-          Sign In
+          Login
         </button>
         <button type="button" onClick={() => setFormType("SignUp")} className={formType == "signIn" ? "" : "active"}>
-          Sign Up
+          Signup
         </button>
       </div>
       {formType == "signIn" ? <SingIn inputs={inputs} /> : <SignUp inputs={inputs} />}
