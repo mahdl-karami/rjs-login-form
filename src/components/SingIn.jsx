@@ -8,7 +8,7 @@ function SingIn({ inputs: { username, password } }) {
       <input required name="password" placeholder="Password" type="password" value={password} />
       <a href="#">Need help ?</a>
       <button type="submit" className="submit-btn">
-        Sing In {<FaLongArrowAltRight />}
+        Login {<FaLongArrowAltRight />}
       </button>
     </>
   );

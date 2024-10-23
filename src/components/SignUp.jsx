@@ -7,7 +7,7 @@ function SignUp({ inputs: { username, password, email } }) {
       <input required placeholder="Email" name="email" type="email" value={email} />
       <input required placeholder="User Name" name="username" type="text" value={username} />
       <input required placeholder="Password" name="password" type="password" value={password} />
-      <button type="submit" className="submit-btn">Sing Up {<FaLongArrowAltRight />}</button>
+      <button type="submit" className="submit-btn">Singup {<FaLongArrowAltRight />}</button>
     </>
   );
 }
